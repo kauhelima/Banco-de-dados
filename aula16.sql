@@ -8,7 +8,8 @@
    
 -- CRIAÇÃO DO BANCO DE DADOS
 CREATE DATABASE IFSP;
-
+Default charset = utf8;
+default collate = utf8_general_ci;
 -- SELECIONAR O BANCO DE DADOS
 USE IFSP;
 
@@ -51,3 +52,22 @@ describe cidade;
 
 insert into cliente (nome, email, id_cidade, numero , bairro, data_nasc)
 values ('murilo Silva', 'murilo@gmail.com', 5, 666, 'portal', '1999/01/15');
+
+--Atualizar valor
+
+UPDATE cidade SET
+    nome = 'londres',
+    estado = 'EN'
+ where id = 2;
+
+ -- UPDATE TABELA CLIENTE
+
+UPDATE cliente SET
+    nome = 'Sebastião',
+    email = 'sebo#gmail.dot'
+ where id = 1;
+
+ -- DELETA REGISTRO(S) DA TABELA
+
+ DELETE FROM cidade
+ where id = 6;
