@@ -33,3 +33,21 @@ CREATE TABLE CLIENTE (
     CONSTRAINT fk_cliente_cidade 
         FOREIGN KEY (id_cidade) REFERENCES cidade(id)
 );
+
+--  INSERIR DADOS
+INSERT INTO cidade (id,nome,estado) values (2,'birigui', 'SP');
+INSERT INTO cidade (id,nome,estado) values (6,'Araçatuba', 'SP');
+INSERT INTO cidade (id,nome,estado) values (4,'Bilac', 'SP');
+INSERT INTO cidade (id,nome,estado) values (5,'Paris', 'FR');
+
+
+--SELECIONAR DA TABELA
+
+select * from cidade;
+
+-- DESCREVER TABELA
+
+describe cidade;
+
+insert into cliente (nome, email, id_cidade, numero , bairro, data_nasc)
+values ('murilo Silva', 'murilo@gmail.com', 5, 666, 'portal', '1999/01/15');
