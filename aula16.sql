@@ -7,7 +7,7 @@
 --    numero, bairro e data nascimento.
    
 -- CRIAÇÃO DO BANCO DE DADOS
-CREATE DATABASE IFSP;
+CREATE DATABASE IFSP;      
 Default charset = utf8;
 default collate = utf8_general_ci;
 -- SELECIONAR O BANCO DE DADOS
